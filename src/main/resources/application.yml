@@ -1,0 +1,20 @@
+management:
+  endpoint:
+    health:
+      show-details: always
+  health:
+    diskspace:
+      enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+info:
+  app:
+    name: '${name}'
+    description: '${description}'
+    version: '${version}'
+    encoding: '${build.sourceEncoding}'
+    java:
+      version: '${java.version}'
